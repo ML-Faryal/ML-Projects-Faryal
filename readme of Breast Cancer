@@ -1,0 +1,61 @@
+# 🎗️ Breast Cancer Classification using SVM
+
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.0%2B-orange)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-red)
+
+An end-to-end **Machine Learning project** that predicts whether a breast tumor is **Malignant** or **Benign** using the **Wisconsin Breast Cancer Dataset** and **Support Vector Machine**.
+
+This project demonstrates a complete ML pipeline from data loading to model evaluation for healthcare diagnosis support.
+
+---
+
+### **📊 Dataset Overview**
+We use `sklearn.datasets.load_breast_cancer` - a built-in dataset.
+
+| Feature | Details |
+| --- | --- |
+| **Instances** | 569 patients |
+| **Features** | 30 numeric features - radius, texture, perimeter, area, etc. |
+| **Target** | 0 = Malignant, 1 = Benign |
+| **Source** | Breast Cancer Wisconsin (Diagnostic) Database |
+
+---
+
+### **🛠️ Tech Stack**
+- **Language**: Python 3.8+
+- **Libraries**: NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn
+- **Model**: Support Vector Machine `SVC`
+- **Environment**: Jupyter Notebook
+
+---
+
+### **⚙️ Project Workflow**
+1.  **Data Loading & Exploration**  
+    Loaded dataset and explored features using `pandas.DataFrame` and `cancer.DESCR`
+2.  **Data Preprocessing**  
+    Converted data to DataFrame for easier analysis
+3.  **Train-Test Split**  
+    Split data into 80% Training and 20% Testing using `train_test_split`
+4.  **Model Training**  
+    Trained `Linear SVM` classifier on training data
+5.  **Model Evaluation**  
+    Evaluated using `Accuracy Score`, `Confusion Matrix`, and `Classification Report`
+
+---
+
+### **📈 Results**
+After training the SVM model:
+- **Accuracy**: ~97%
+- The model effectively distinguishes between Malignant and Benign tumors.
+- Confusion Matrix and Classification Report show high Precision and Recall.
+
+*Run the notebook to see detailed output and metrics*
+
+---
+
+### **🚀 How to Run This Project**
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/your-username/breast-cancer-svm.git
+    cd breast-cancer-svm
