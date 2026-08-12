@@ -1,0 +1,66 @@
+# 🌸 Iris Flower Classification using Random Forest
+
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.0%2B-orange)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-red)
+
+An end-to-end **Machine Learning project** that classifies Iris flowers into 3 species using the **Iris Dataset** and **RandomForestClassifier**.
+
+This project demonstrates a complete ML pipeline from data loading, EDA, model training to evaluation and visualization.
+
+---
+
+### **📊 Dataset Overview**
+We use `sklearn.datasets.load_iris` - one of the most famous datasets for ML beginners.
+
+| Feature | Details |
+| --- | --- |
+| **Instances** | 150 samples - 50 for each class |
+| **Features** | 4 numeric features in cm |
+| **Feature Names** | sepal length, sepal width, petal length, petal width |
+| **Target Classes** | 0 = Setosa, 1 = Versicolor, 2 = Virginica |
+| **Problem Type** | Multi-Class Classification |
+
+---
+
+### **🛠️ Tech Stack**
+- **Language**: Python 3.8+
+- **Libraries**: NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn
+- **Model**: RandomForestClassifier
+- **Environment**: Jupyter Notebook
+
+---
+
+### **⚙️ Project Workflow**
+1.  **Data Loading & Exploration**  
+    Loaded dataset using `load_iris()` and explored `data`, `target`, `feature_names`, `DESCR`
+2.  **Data Preprocessing**  
+    Converted data to `pandas.DataFrame` for easier analysis and visualization
+3.  **Train-Test Split**  
+    Split data into 70% Training and 30% Testing using `train_test_split` with `random_state=42`
+4.  **Model Training**  
+    Trained `RandomForestClassifier` with `n_estimators=100` on training data
+5.  **Model Prediction**  
+    Predicted species for the test set
+6.  **Model Evaluation**  
+    Evaluated using `Accuracy Score`, `Classification Report`, and `Confusion Matrix`
+7.  **Visualization**  
+    Plotted Confusion Matrix using `Seaborn Heatmap` with proper class labels
+
+---
+
+### **📈 Results**
+After training the Random Forest model:
+- **Accuracy**: ~97-100% depending on train-test split
+- The model perfectly classifies `Setosa` and has very high accuracy for `Versicolor` and `Virginica`
+- Confusion Matrix shows where the model makes mistakes between similar classes
+
+*Run the notebook to see detailed output and the heatmap*
+
+---
+
+### **🚀 How to Run This Project**
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/your-username/iris-classification-randomforest.git
+    cd iris-classification-randomforest
