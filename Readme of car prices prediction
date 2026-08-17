@@ -1,0 +1,31 @@
+# Car Price Prediction with Linear Regression
+
+A simple Python notebook that predicts used car selling prices using mileage and age as features. Built with scikit-learn and pandas in JupyterLab.
+
+## **Project Overview**
+This project trains a Linear Regression model to estimate `sell` price of a car based on:
+- **mileage**: total kilometers driven
+- **age**: age of the car in years
+
+The target variable is:
+- **sell**: selling price of the car
+
+The notebook loads data, explores the first few rows, and sets up features for modeling.
+
+## **Dataset**
+File: `carprices.csv`
+
+| mileage | age | sell |
+| --- | --- | --- |
+| 69000 | 6 | 18000 |
+| 35000 | 3 | 34000 |
+| 57000 | 5 | 26100 |
+| 22500 | 2 | 40000 |
+| 46000 | 4 | 31500 |
+
+Place `carprices.csv` in the same folder as the notebook.
+
+## **Requirements**
+Install dependencies with pip:
+```bash
+pip install numpy pandas seaborn matplotlib scikit-learn jupyterlab
